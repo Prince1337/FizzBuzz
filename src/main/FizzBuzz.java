@@ -11,6 +11,11 @@ public class FizzBuzz {
   }
 
   public String translate(int number){
+    if(String.valueOf(number).contains("3"))
+      return "Fizz";
+    if(String.valueOf(number).contains("5"))
+      return "Buzz";
+
     if (number % 3 == 0 && number % 5 == 0)
       return "FizzBuzz";
     if(number % 3 == 0)
